@@ -6,9 +6,11 @@
 
 --> cd rl-baselines3-zo
 
---> python3 train.py --algo dqn --env Breakout-v4  -f logs/ --progress 
+--> python3 train.py --algo dqn --env Breakout-v4  -f logs/ --progress --tensorboard-log runs/
 
 (para editar hiperparametros ir a hyperparams/dqn.yml o mirar train.py para pasar los argumentos por consola)
+
+Los logs para tensorboard se encuentran en la carpeta "runs/", como le hemos indicado en el entrenamiento.
 
 #### PROBAR MODELOS ENTRENADOS 
 
